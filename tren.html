@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SENJA — Tren</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/tren.css" />
+</head>
+<body data-page="tren">
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="24" cy="24" r="21" stroke="#2f3e9e" stroke-width="2.5"/>
+          <path d="M14 20c3-4 7-5 11-3M12 27c5 3 12 3 20-1M18 33c4 1 9 0 13-3" stroke="#6d57c0" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">SENJA</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html" data-nav="beranda">Beranda</a>
+        <a href="skrining.html" data-nav="skrining">Skrining</a>
+        <a href="mood.html" data-nav="mood">Mood harian</a>
+        <a href="tren.html" data-nav="tren">Tren</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="main-inner">
+        <header class="page-head">
+          <h1>Tren suasana hatimu</h1>
+          <p>Tampilan data 14 hari terakhir.</p>
+        </header>
+
+        <section class="card line-card">
+          <h2>Mood 14 hari terakhir</h2>
+          <div class="line-chart">
+            <div class="y-emojis">
+              <span class="face m5">😄</span>
+              <span class="face m4">🙂</span>
+              <span class="face m3">😐</span>
+              <span class="face m2">🙁</span>
+              <span class="face m1">😣</span>
+            </div>
+            <svg id="lineChart" class="line-svg" viewBox="0 0 760 300" preserveAspectRatio="none" aria-hidden="true"></svg>
+          </div>
+          <div class="x-labels" id="xLabels"></div>
+        </section>
+
+        <div class="grid-2 bottom">
+          <section class="card">
+            <h2>Rata-rata per hari</h2>
+            <div class="bars" id="bars"></div>
+            <div class="bar-labels">
+              <span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span>Jum</span><span>Sab</span><span>Min</span>
+            </div>
+          </section>
+
+          <section class="card insight">
+            <div class="eyebrow">Pola ditemukan</div>
+            <h3>Moodmu turun tiap awal minggu</h3>
+            <p class="muted">Coba sisihkan waktu istirahat di hari Minggu malam dan Senin pagi.</p>
+            <button class="btn btn-primary">Lihat saran</button>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/tren.js"></script>
+</body>
+</html>

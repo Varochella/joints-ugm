@@ -1,0 +1,64 @@
+/* Tren (Trends) page styles */
+
+.line-card { margin-bottom: 20px; }
+
+.line-chart {
+  display: flex;
+  gap: 14px;
+  height: 300px;
+}
+.y-emojis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+.y-emojis .face {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+.line-svg { flex: 1; height: 100%; overflow: visible; }
+
+.x-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 56px;
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.x-labels span { flex: 1; text-align: center; }
+
+/* Average bars */
+.bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  height: 150px;
+  padding-top: 10px;
+}
+.bars .bar {
+  flex: 1;
+  background: #d9d1f0;
+  border-radius: 10px 10px 8px 8px;
+  transition: height 0.4s ease;
+}
+.bars .bar.peak { background: #ef8f5f; }
+.bar-labels {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.bar-labels span { flex: 1; text-align: center; }
+
+/* Insight card */
+.insight { background: var(--bg-amber); display: flex; flex-direction: column; }
+.insight h3 { margin: 2px 0 10px; font-size: 20px; color: var(--text-strong); }
+.insight .muted { color: #7a6a5a; line-height: 1.6; }
+.insight .btn { margin-top: 18px; align-self: flex-start; }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SENJA — Beranda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body data-page="beranda">
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="24" cy="24" r="21" stroke="#2f3e9e" stroke-width="2.5"/>
+          <path d="M14 20c3-4 7-5 11-3M12 27c5 3 12 3 20-1M18 33c4 1 9 0 13-3" stroke="#6d57c0" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">SENJA</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html" data-nav="beranda">Beranda</a>
+        <a href="skrining.html" data-nav="skrining">Skrining</a>
+        <a href="mood.html" data-nav="mood">Mood harian</a>
+        <a href="tren.html" data-nav="tren">Tren</a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="main-inner">
+        <header class="page-head">
+          <h1>Selamat sore, JosepVaroGrace</h1>
+          <p>Pelan-pelan saja. Kamu tidak harus baik-baik saja setiap saat.</p>
+        </header>
+
+        <!-- Hero -->
+        <section class="card hero">
+          <div class="badge"><span class="dot"></span> Ruang Aman &amp; Privat <span class="dot"></span></div>
+          <h2 class="hero-title">YOUR EMOTIONS MATTER</h2>
+          <blockquote class="quote">
+            <span class="quote-mark">99</span>
+            <p>"Senja adalah ruang aman dan privat untuk mengenali kondisi mentalmu, memantau
+              suasana hati, dan merawat diri pelan-pelan, tanpa stigma, tanpa dihakimi. Karena setiap
+              perasaan layak diberi ruang untuk mereda."</p>
+            <div class="quote-foot">Perjalanan pulih tanpa beban</div>
+          </blockquote>
+
+          <div class="status-cards">
+            <div class="status-card calm">
+              <span class="status-ico">🌱</span>
+              <div><strong>Tenang</strong><span>Damai &amp; bertumbuh</span></div>
+            </div>
+            <div class="status-card tired">
+              <span class="status-ico">🌙</span>
+              <div><strong>Lelah</strong><span>Butuh jeda sejenak</span></div>
+            </div>
+            <div class="status-card over">
+              <span class="status-ico">🧩</span>
+              <div><strong>Kewalahan</strong><span>Perlu ruang hening</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Mood picker -->
+        <section class="card mood-picker-card">
+          <h2>Bagaimana perasaanmu hari ini?</h2>
+          <div class="moods" id="homeMoods">
+            <button class="mood" data-mood="berat"><span class="face m1">😣</span><span class="label">Berat</span></button>
+            <button class="mood" data-mood="kurang"><span class="face m2">🙁</span><span class="label">Kurang baik</span></button>
+            <button class="mood active" data-mood="biasa"><span class="face m3">😐</span><span class="label">Biasa</span></button>
+            <button class="mood" data-mood="baik"><span class="face m4">🙂</span><span class="label">Baik</span></button>
+            <button class="mood" data-mood="cerah"><span class="face m5">😄</span><span class="label">Cerah</span></button>
+          </div>
+          <button class="btn btn-primary" style="margin-top:22px">Tulis catatan singkat</button>
+        </section>
+
+        <!-- Promo cards -->
+        <section class="grid-2 promos">
+          <div class="card promo-soft">
+            <div class="eyebrow">Skrining</div>
+            <h3>Cek tingkat stres &amp; burnout</h3>
+            <p class="muted">9 pertanyaan singkat, sekitar 5 menit. Hasilnya bukan diagnosis.</p>
+            <a href="skrining.html" class="btn btn-primary">Mulai skrining</a>
+          </div>
+          <div class="card">
+            <div class="eyebrow">Tren minggu ini</div>
+            <h3>Moodmu cenderung turun di hari Senin</h3>
+            <p class="muted">Lihat polanya untuk mengenali apa yang membuatmu lelah.</p>
+            <a href="tren.html" class="btn btn-ghost">Lihat tren</a>
+          </div>
+        </section>
+
+        <!-- Info cards -->
+        <section class="grid-3 info-cards">
+          <article class="card info-card">
+            <span class="info-ico">🧠</span>
+            <div class="eyebrow">Validasi batin</div>
+            <h4>Fakta Kesehatan Mental &amp; Validasi Emosi</h4>
+            <p class="muted small">Menolak atau menekan rasa sakit justru memicu kelelahan kognitif.
+              Memberi nama pada apa yang kamu rasakan menurunkan aktivitas di amigdala otak hingga <strong>35%</strong>.</p>
+            <div class="info-foot">🛡️ Bebas Stigma &amp; Evaluasi Empatik</div>
+          </article>
+
+          <article class="card info-card">
+            <span class="info-ico">🫁</span>
+            <div class="eyebrow">Latihan menenangkan</div>
+            <h4>Langkah Pertama: Dengarkan Napasmu</h4>
+            <p class="muted small">Saat pikiran bergemuruh, kembalilah ke tubuh. Relaksasi pernapasan
+              terstruktur memicu sistem saraf parasimpatis untuk meredakan ketegangan fisik.</p>
+            <div class="breath-box">
+              <div class="breath-dot"></div>
+              <span class="small muted">4 Detik Tarik • 4 Detik Tahan • 4 Detik Hembuskan</span>
+            </div>
+            <div class="info-foot between"><span>Detak napas terpandu</span><a class="link-arrow" href="#">Mulai 1 Menit</a></div>
+          </article>
+
+          <article class="card info-card">
+            <span class="info-ico">🛡️</span>
+            <div class="eyebrow">Standar klinis &amp; aman</div>
+            <h4>Skrining Mandiri &amp; Privasi Aman</h4>
+            <p class="muted small">Skor DASS-21 adaptif dengan penjelasan hasil transparan
+              (Rendah, Sedang, Tinggi), dan jaminan <strong>100% data tersimpan di perangkat lokal</strong>
+              pengguna tanpa pelacak pihak ketiga.</p>
+            <div class="info-pill">🔒 Offline-first &amp; Anonimitas Mutlak</div>
+            <div class="info-foot"><a class="link-arrow" href="skrining.html">Mulai Tes DASS-21 →</a></div>
+          </article>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script>SENJA.singleSelect("#homeMoods", ".mood");</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SENJA — Skrining</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/skrining.css" />
+</head>
+<body data-page="skrining">
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="24" cy="24" r="21" stroke="#2f3e9e" stroke-width="2.5"/>
+          <path d="M14 20c3-4 7-5 11-3M12 27c5 3 12 3 20-1M18 33c4 1 9 0 13-3" stroke="#6d57c0" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">SENJA</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html" data-nav="beranda">Beranda</a>
+        <a href="skrining.html" data-nav="skrining">Skrining</a>
+        <a href="mood.html" data-nav="mood">Mood harian</a>
+        <a href="tren.html" data-nav="tren">Tren</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="main-inner">
+        <header class="page-head">
+          <div class="eyebrow" id="qStep">Skrining · Pertanyaan 3 / 10</div>
+          <h1>Cek kondisimu, tanpa penilaian</h1>
+          <div class="progress"><span class="progress-bar" id="progressBar" style="width:30%"></span></div>
+        </header>
+
+        <div class="side-layout">
+          <section class="card question-card">
+            <h2 id="questionText">Dalam 2 minggu terakhir, seberapa sering kamu merasa lelah atau kurang berenergi?</h2>
+            <div class="options" id="options">
+              <button class="option">Tidak sama sekali</button>
+              <button class="option">Beberapa hari</button>
+              <button class="option active">Lebih dari separuh hari</button>
+              <button class="option">Hampir setiap hari</button>
+            </div>
+            <div class="row" style="margin-top:22px">
+              <button class="btn btn-muted" id="backBtn">Kembali</button>
+              <button class="btn btn-primary" id="nextBtn">Lanjut</button>
+            </div>
+          </section>
+
+          <aside class="card result-side">
+            <h2>Hasilmu nanti</h2>
+            <p class="muted">Kamu akan melihat skor dan arti singkatnya:</p>
+            <div class="row" style="flex-wrap:wrap; margin:14px 0 18px;">
+              <span class="chip-static">Rendah</span>
+              <span class="chip-static">Sedang</span>
+              <span class="chip-static">Tinggi</span>
+            </div>
+            <p class="muted">Jawabanmu privat. Skrining ini bukan diagnosis, hanya langkah awal mengenali dirimu.</p>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/skrining.js"></script>
+</body>
+</html>
